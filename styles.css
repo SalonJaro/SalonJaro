@@ -143,6 +143,177 @@ main {
   border-left: 4px solid #dc2626;
 }
 
+.envios-info {
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+  padding: 30px;
+  border-radius: 16px;
+  margin-top: 30px;
+  text-align: center;
+  border: 3px solid #f59e0b;
+  box-shadow: 0 6px 16px rgba(245, 158, 11, 0.2);
+}
+
+.envios-info h3 {
+  font-size: 28px;
+  color: #92400e;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.envios-info p {
+  font-size: 16px;
+  color: #78350f;
+  margin: 0 0 16px 0;
+  text-align: center;
+}
+
+.contacto-envios {
+  background: white;
+  padding: 16px;
+  border-radius: 12px;
+  display: inline-block;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.contacto-envios p {
+  margin: 0;
+  font-size: 18px;
+  color: #dc2626;
+  font-weight: 600;
+}
+
+.excursion-destacada {
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+  padding: 60px 20px;
+  border-bottom: 3px solid #0284c7;
+}
+
+.excursion-destacada h2 {
+  text-align: center;
+  font-size: 36px;
+  color: #0369a1;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.excursion-card {
+  max-width: 900px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+}
+
+@media (max-width: 768px) {
+  .excursion-card {
+    grid-template-columns: 1fr;
+  }
+}
+
+.excursion-imagen {
+  position: relative;
+  overflow: hidden;
+}
+
+.excursion-imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  min-height: 350px;
+  transition: transform 0.5s ease;
+}
+
+.excursion-card:hover .excursion-imagen img {
+  transform: scale(1.1);
+}
+
+.excursion-badge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: linear-gradient(135deg, #dc2626, #FF8904);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: 700;
+  font-size: 14px;
+  box-shadow: 0 4px 12px rgba(220, 38, 38, 0.4);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.excursion-detalles {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.excursion-detalles h3 {
+  font-size: 28px;
+  color: #0369a1;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+.excursion-detalles > p {
+  font-size: 16px;
+  color: #374151;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.excursion-info {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  background: #f0f9ff;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.excursion-info li {
+  font-size: 15px;
+  color: #1e40af;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.excursion-info li:last-child {
+  margin-bottom: 0;
+}
+
+.excursion-contacto {
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+  padding: 16px;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 15px;
+  color: #78350f;
+  margin-top: 20px;
+  border: 2px solid #f59e0b;
+}
+
+.excursion-contacto strong {
+  color: #dc2626;
+  font-size: 16px;
+}
+
 .productos-titulo {
   text-align: center;
   font-size: 32px;
@@ -159,6 +330,7 @@ main {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .productos-grid {

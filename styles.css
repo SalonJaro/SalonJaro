@@ -227,6 +227,30 @@ main {
   transition: transform 0.5s ease;
 }
 
+@media (max-width: 768px) {
+  .excursion-imagen img {
+    min-height: 250px;
+    max-height: 300px;
+  }
+  
+  .excursion-detalles {
+    padding: 30px 20px;
+  }
+  
+  .excursion-destacada {
+    padding: 40px 20px;
+  }
+  
+  .excursion-destacada h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  
+  .excursion-detalles h3 {
+    font-size: 24px;
+  }
+}
+
 .excursion-card:hover .excursion-imagen img {
   transform: scale(1.1);
 }

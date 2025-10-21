@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Salón Jaro - Productos</title>
+  <link rel="icon" type="image/png" href="media/logo-jaro.png">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container header-content">
+      <div class="logo-container">
+        <img src="media/logo-jaro.png" alt="Salón Jaro Logo" class="logo">
+        <h1>Salón Jaro</h1>
+      </div>
+      <button id="carritoBtn">
+        🛒 Ver carrito <span id="carritoCount" class="carrito-count">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="quienes-somos">
+      <div class="container">
+        <h2>¿Quiénes Somos?</h2>
+        <div class="historia-content">
+          <p>
+            <strong>Salón Jaro</strong> es más que un comercio de barrio: somos parte de la comunidad desde hace años, 
+            ubicados en el corazón de José Serrato 3150. Nacimos con la visión de ser el punto de encuentro 
+            para las familias del barrio, ofreciendo productos de calidad a precios accesibles.
+          </p>
+          <p>
+            Nuestra pasión es servir a nuestros vecinos con calidez y dedicación. Por eso, además de ofrecer 
+            una amplia variedad de productos de almacén, bebidas y artículos del hogar, también brindamos 
+            <strong>servicios especiales</strong> que nos hacen únicos:
+          </p>
+          <div class="servicios-grid">
+            <div class="servicio-item">
+              <span class="servicio-icon">🚌</span>
+              <h3>Excursiones</h3>
+              <p>Organizamos salidas y paseos para que disfrutes momentos inolvidables con familia y amigos.</p>
+            </div>
+            <div class="servicio-item">
+              <span class="servicio-icon">🎰</span>
+              <h3>Lotería</h3>
+              <p>Tenemos disponible lotería para que pruebes tu suerte sin salir del barrio.</p>
+            </div>
+            <div class="servicio-item">
+              <span class="servicio-icon">🎫</span>
+              <h3>Recarga de Boleteras</h3>
+              <p>Recargamos tu boletera STM para que nunca te quedes sin saldo para viajar.</p>
+            </div>
+          </div>
+          <p class="cierre">
+            En <strong>Salón Jaro</strong> te esperamos con la mejor atención, productos frescos y un servicio 
+            que va más allá de lo tradicional. <em>¡Somos tu comercio de confianza!</em>
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    <div class="container">
+      <h2 class="productos-titulo">Nuestros Productos</h2>
+      <div id="productosGrid" class="productos-grid"></div>
+    </div>
+  </main>
+
+  <div id="carritoModal" class="carrito-modal">
+    <div class="carrito-contenido">
+      <div class="carrito-header">
+        <h2>🛒 Tu Carrito</h2>
+        <button id="cerrarModal" class="cerrar-btn">✖</button>
+      </div>
+      <div id="carritoItems" class="carrito-items-container"></div>
+      <div class="carrito-resumen">
+        <div class="carrito-total">
+          <span>Total:</span>
+          <span id="totalCarrito" class="total-precio">$0</span>
+        </div>
+        <button id="finalizarBtn" class="finalizar-btn">
+          <span>📱</span> Finalizar por WhatsApp
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Salón Jaro. Todos los derechos reservados.</p>
+      <p>📍 José Serrato 3150</p>
+      <p>📞 095 089 122</p>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

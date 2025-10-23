@@ -14,9 +14,6 @@
         <img src="media/logo-jaro.png" alt="Salón Jaro Logo" class="logo">
         <h1>Salón Jaro</h1>
       </div>
-      <button id="carritoBtn">
-        🛒 Ver carrito <span id="carritoCount" class="carrito-count">0</span>
-      </button>
     </div>
   </header>
 
@@ -37,17 +34,25 @@
           </p>
           <div class="servicios-grid">
             <div class="servicio-item">
-              <span class="servicio-icon">🚌</span>
+              <span class="servicio-icon"></span>
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlCsMMN28oE-mexu8hxXU-P1DvVnHRP7Db-w&s" 
+              alt="Excursiones"
+              class="excusion-new"
               <h3>Excursiones</h3>
               <p>Organizamos salidas y paseos para que disfrutes momentos inolvidables con familia y amigos.</p>
             </div>
             <div class="servicio-item">
-              <span class="servicio-icon">🎰</span>
+              <span class="servicio-icon"></span>
+              <img src="media/loteria.jpg" alt="loteria" class="loteria-img"
               <h3>Lotería</h3>
               <p>Tenemos disponible lotería para que pruebes tu suerte sin salir del barrio.</p>
             </div>
             <div class="servicio-item">
-              <span class="servicio-icon">🎫</span>
+              <span class="servicio-icon"></span>
+               <img 
+                src="https://www.montevideo.gub.uy/sites/default/files/biblioteca/webim300x200tarjetastmgenerica.png" 
+                alt="Tarjeta STM"
+                class="servicio-imagen-stm"
               <h3>Recarga de Boleteras</h3>
               <p>Recargamos tu boletera STM para que nunca te quedes sin saldo para viajar.</p>
             </div>
@@ -58,10 +63,10 @@
           </p>
           
           <div class="envios-info">
-            <h3>📦 Envíos a Domicilio</h3>
+            <h3>🚲 Envíos a Domicilio</h3>
             <p>¡Hacemos envíos a domicilio para tu comodidad! Pedí tus productos favoritos y te los llevamos a tu casa.</p>
             <div class="contacto-envios">
-              <p>📞 <strong>095 089 122</strong> | <strong>2507 7036</strong></p>
+              <p>📞 <strong>095 089 122</strong> | <strong>2507 7036</strong> | <strong> 0800 8187 Linea gratuita</strong></p>
             </div>
           </div>
         </div>
@@ -96,25 +101,6 @@
       <div id="productosGrid" class="productos-grid"></div>
     </div>
   </main>
-
-  <div id="carritoModal" class="carrito-modal">
-    <div class="carrito-contenido">
-      <div class="carrito-header">
-        <h2>🛒 Tu Carrito</h2>
-        <button id="cerrarModal" class="cerrar-btn">✖</button>
-      </div>
-      <div id="carritoItems" class="carrito-items-container"></div>
-      <div class="carrito-resumen">
-        <div class="carrito-total">
-          <span>Total:</span>
-          <span id="totalCarrito" class="total-precio">$0</span>
-        </div>
-        <button id="finalizarBtn" class="finalizar-btn">
-          <span>📱</span> Finalizar por WhatsApp
-        </button>
-      </div>
-    </div>
-  </div>
 
   <footer>
     <div class="container">
